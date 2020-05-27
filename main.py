@@ -15,7 +15,7 @@ def tweet():
         logger.info("updating status.....")
         api.update_status(verses)
         logger.info("sleeping")
-        sleep(60*60*12)
+        sleep(60*60*8)
 
 
 if __name__ == "__main__":
