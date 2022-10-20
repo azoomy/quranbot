@@ -12,7 +12,6 @@ api = create_api()
 def bring_verse(verse):
     url = 'http://api.alquran.cloud/ayah/' + str(verse) + '/editions/quran-uthmani,en.pickthall'
     json_data = requests.get(url).json()
-    verse_a = json_data['data'][0]['text']
     verse_en = json_data['data'][1]['text']
     surah = json_data['data'][0]['surah']['englishName'] + \
             '(' + str(json_data['data'][0]['surah']['number']) + '):' + \
