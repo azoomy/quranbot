@@ -2,9 +2,6 @@ import tweepy
 import logging
 import os
 import credentials
-from dotenv import load_dotenv
-load_dotenv()
-
 logger = logging.getLogger()
 
 
